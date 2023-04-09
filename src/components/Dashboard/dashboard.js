@@ -83,7 +83,7 @@ function Dashboard(props) {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap component="div">
-            D.A.V PUPLLIC SCHOOL
+            D.A.V PUBLIC SCHOOL
           </Typography>
         </Toolbar>
       </AppBar>
