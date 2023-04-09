@@ -1,0 +1,9 @@
+.page_container {
+  color: #454040;
+  width: 100%;
+}
+
+.page_container h1 {
+  margin-bottom: 0;
+  text-align: center;
+}
