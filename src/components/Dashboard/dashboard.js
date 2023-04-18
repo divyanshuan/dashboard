@@ -29,10 +29,10 @@ function Dashboard(props) {
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
   const navlinks = [
-    { key: "Admission", path: "/admission", icon: <AdmissionIcon /> },
-    { key: "Sudents", path: "/student", icon: <StudentIcon /> },
-    { key: "Fees", path: "/fee", icon: <FeeIcon /> },
-    { key: "Notice", path: "/notice", icon: <NoticeIcon /> },
+    { key: "Admission", path: "/dashboard/admission", icon: <AdmissionIcon /> },
+    { key: "Sudents", path: "/dashboard/student", icon: <StudentIcon /> },
+    { key: "Fees", path: "/dashboard/fee", icon: <FeeIcon /> },
+    { key: "Notice", path: "/dashboard/notice", icon: <NoticeIcon /> },
   ];
 
   const handleDrawerToggle = () => {
@@ -44,9 +44,9 @@ function Dashboard(props) {
       {/* <Toolbar /> */}
       {/* <Divider /> */}
       <List>
-        {navlinks.map((value) => {
+        {navlinks.map((value, key) => {
           return (
-            <NavLink to={value.path} className="nav_items">
+            <NavLink to={value.path} className="nav_items" key={key}>
               <ListItemButton>
                 <ListItemIcon>{value.icon}</ListItemIcon>
                 <ListItemText primary={value.key} />
