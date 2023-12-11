@@ -7,21 +7,15 @@ import {
 import Dashboard from "./components/Dashboard/dashboard";
 
 import "./index.css";
-import Admission from "./components/Admission/admission";
-import Students from "./components/Students/students";
-import Notice from "./components/Notice/notice";
-import Fee from "./components/Fee/fee";
-import Login from "./login/login";
+import Stocks from "./components/Stocks/Stocks";
+import Myorder from "./components/Myorder/Myorder";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
-      <Route path="/" element={<Login />}></Route>
       <Route path="/dashboard" element={<Dashboard />}>
-        <Route path="admission" element={<Admission />} />
-        <Route path="student" element={<Students />} />
-        <Route path="notice" element={<Notice />} />
-        <Route path="fee" element={<Fee />} />
+        <Route path="stocks" element={<Stocks />} />
+        <Route path="orders" element={<Myorder />} />
       </Route>
     </>
   )

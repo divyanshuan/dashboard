@@ -15,12 +15,7 @@ import Typography from "@mui/material/Typography";
 
 import "./dashboard.css";
 import { NavLink, Outlet } from "react-router-dom";
-import {
-  StudentIcon,
-  AdmissionIcon,
-  FeeIcon,
-  NoticeIcon,
-} from "../../assets/icons/icon";
+import { OrderIcon, StocksIcon } from "../../assets/icons/icon";
 
 const drawerWidth = 240;
 
@@ -29,10 +24,8 @@ function Dashboard(props) {
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
   const navlinks = [
-    { key: "Admission", path: "/dashboard/admission", icon: <AdmissionIcon /> },
-    { key: "Sudents", path: "/dashboard/student", icon: <StudentIcon /> },
-    { key: "Fees", path: "/dashboard/fee", icon: <FeeIcon /> },
-    { key: "Notice", path: "/dashboard/notice", icon: <NoticeIcon /> },
+    { key: "stock", path: "/dashboard/stocks", icon: <StocksIcon /> },
+    { key: "orders", path: "/dashboard/orders", icon: <OrderIcon /> },
   ];
 
   const handleDrawerToggle = () => {
@@ -83,7 +76,7 @@ function Dashboard(props) {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap component="div">
-            D.A.V PUBLIC SCHOOL
+            Made2Automate
           </Typography>
         </Toolbar>
       </AppBar>
